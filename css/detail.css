@@ -26,6 +26,20 @@
     color:#dc3545;
 }
 
+/* add to cart button */
+.btn-color{
+    color: #ffffff !important;
+    background-color: #f15a29 !important;
+}
+
+.btn-color:hover{
+     background-color: #f8f9fa !important;   /* light gray background */
+    color: #f15a29 !important;              /* dark text */
+    border: 1px solid #f15a29 !important;   /* dark border */
+    cursor: pointer;
+    width: 100%;
+}
+
 .carousel-item img{
     height:550px;
     object-fit:cover;

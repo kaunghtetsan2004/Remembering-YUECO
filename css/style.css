@@ -6,7 +6,7 @@
 }
 
 *{
-    font-family: var(--Gelasio);
+    font-family: var(--Gravitas_One);
     font-weight: bold;
 }
 
@@ -57,7 +57,7 @@
 
 #mainNav.scrolled {
     background-color: #000000 !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item a:hover{
@@ -69,7 +69,7 @@
     color: #f15a29;
 }
 #mainNav.scrolled i {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 #mainNav .nav-link,

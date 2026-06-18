@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- icon -->
-  <title>YUECO</title>
-  <link rel="icon" href="assets/PNGs-19.png">
+    <title>YUECO</title>
+    <link rel="icon" href="assets/PNGs-19.png">
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/detail.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
 
 
     <!-- Bootstrap CSS -->
@@ -26,11 +27,11 @@
 
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <script class="fontawesome/js/all.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top" id="mainNav">
         <div class="container d-flex align-items-center">
             <!-- Mobile Menu Button -->
             <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas"
@@ -48,7 +49,7 @@
                     <li class="nav-item">
                         <a class="nav-link me-3" href="index.html">Shop</a>
                     </li>
-                   
+
 
                     <li class="nav-item">
                         <a class="nav-link me-3" href="about.html">About</a>
@@ -70,8 +71,8 @@
             <!-- Right Cart -->
             <div class="navbar d-flex flex-lg-row align-items-end justify-content-start  ms-auto ">
 
-                
-                
+
+
                 <div class="position-relative mt-2 me-4">
                     <a href="order.html" class="btn text-white">
                         <i class="fa-solid fa-bag-shopping fa-lg"></i>
@@ -113,9 +114,9 @@
                 </li>
 
                 <li class="list-group-item bg-black">
-                    <a class="text-white text-decoration-none"  href="#mobileDiy">
+                    <a class="text-white text-decoration-none" href="#mobileDiy">
                         CONTACT
-                    </a>                  
+                    </a>
                 </li>
 
             </ul>
@@ -124,53 +125,53 @@
     </div>
 
     <div class="container my-5">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th> Name</th>
-            <th> Price</th>
-            <th>Color</th>
-            <th>Size</th>
-            <th> Qty</th>
-            <th>SubTotal</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider" id="shopTbody"></tbody>
-        <tfoot>
-          <tr>
-            <td colspan="6"><b>Total</b></td>
-            <td id="total">0</td>
-          </tr>
-        </tfoot>
-      </table>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th> Name</th>
+                    <th> Price</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th> Qty</th>
+                    <th>SubTotal</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider" id="shopTbody"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6"><b>Total</b></td>
+                    <td id="total">0</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
-    
+
 
     <!-- Payment Section -->
-  <section class="container py-5">
-    <div class="form-box login form payment-form">
-      <form id="form" method="POST" enctype="multipart/form-data">
-        <h3 class="text-center fw-bold mb-4">Payment</h3>
+    <section class="container py-5">
+        <div class="form-box login form payment-form">
+            <form id="form" method="POST" enctype="multipart/form-data">
+                <h3 class="text-center fw-bold mb-4">Payment</h3>
 
-        <div class="input-box mb-3">
-          <input type="text" id="name" placeholder="Name" required>
-        </div>
+                <div class="input-box mb-3">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
 
-        <div class="input-box mb-3">
-          <input type="tel" id="phone" placeholder="Phone" required>
-        </div>
+                <div class="input-box mb-3">
+                    <input type="tel" id="phone" placeholder="Phone" required>
+                </div>
 
-        <div class="input-box mb-3">
-          <input type="text" id="rollno" placeholder="Roll No." required>
-        </div>
+                <div class="input-box mb-3">
+                    <input type="text" id="rollno" placeholder="Roll No." required>
+                </div>
 
-        <div class="input-box mb-3">
-          <input type="text" id="major" placeholder="Major" required>
-        </div>
+                <div class="input-box mb-3">
+                    <input type="text" id="major" placeholder="Major" required>
+                </div>
 
-        <!-- Payment Choice -->
-        <!-- <div class="payment-method mb-4">
+                <!-- Payment Choice -->
+                <!-- <div class="payment-method mb-4">
           <label class="method-card">
             <input type="radio" name="payment" value="kpay" checked>
             <span> <img src="assets/kpay.png" class="w-25" alt=""> KPay</span>
@@ -183,11 +184,11 @@
         </div> -->
 
 
-        <!-- <div class="text-center mb-4">
+                <!-- <div class="text-center mb-4">
           <img id="qrImage" src="assets/kpay.png" style="max-width:250px;" alt="QR Code">
         </div> -->
-        <!-- Upload Screenshot -->
-        <!-- <div class="upload-box mb-4">
+                <!-- Upload Screenshot -->
+                <!-- <div class="upload-box mb-4">
           <label for="paymentSlip" class="upload-label">
             <i class="fa-solid fa-cloud-arrow-up"></i>
             <span>Upload Payment Screenshot</span>
@@ -195,17 +196,17 @@
           <input type="file" id="paymentSlip" hidden required>
         </div> -->
 
-        <div class="text-center">
-          <button type="submit" class="btn subMit w-50">
-            Submit
-          </button>
+                <div class="text-center">
+                    <button type="submit" class="btn subMit w-50">
+                        Submit
+                    </button>
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
-  </section>
+    </section>
 
     <div class="container my-5">
-      <div class="line"></div>
+        <div class="line"></div>
     </div>
 
     <footer class="container">
@@ -242,11 +243,11 @@
         </div>
         <div class="ftline my-3"></div>
         <div class="copyright">
-        <p class="text-center"> Copyright
-            &copy; <span id="year"></span> YUECO Remembering. Some rights reversed.
-        </p>
+            <p class="text-center"> Copyright
+                &copy; <span id="year"></span> YUECO Remembering. Some rights reversed.
+            </p>
         </div>
-     </footer>
+    </footer>
 
 
     <script>
@@ -264,24 +265,24 @@
     </script>
 
     <script>
-document.getElementById("form").addEventListener("submit", function (e) {
-    e.preventDefault();
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    // Form data
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const rollno = document.getElementById("rollno").value;
-    const major = document.getElementById("major").value;
-    const total = document.getElementById("total").innerText;
+            // Form data
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const rollno = document.getElementById("rollno").value;
+            const major = document.getElementById("major").value;
+            const total = document.getElementById("total").innerText;
 
-    // Get table data
-    let orderDetails = "";
-    const rows = document.querySelectorAll("#shopTbody tr");
+            // Get table data
+            let orderDetails = "";
+            const rows = document.querySelectorAll("#shopTbody tr");
 
-    rows.forEach((row, index) => {
-        const cols = row.querySelectorAll("td");
+            rows.forEach((row, index) => {
+                const cols = row.querySelectorAll("td");
 
-        orderDetails += `
+                orderDetails += `
 ${index + 1}. ${cols[1]?.innerText || ""}
    Price : ${cols[2]?.innerText || ""}
    Color : ${cols[3]?.innerText || ""}
@@ -289,10 +290,10 @@ ${index + 1}. ${cols[1]?.innerText || ""}
    Qty   : ${cols[5]?.innerText || ""}
    SubTotal : ${cols[6]?.innerText || ""}
 `;
-    });
+            });
 
-    // Final message
-    const message = `
+            // Final message
+            const message = `
 🛒 NEW ORDER
 
 👤 Name : ${name}
@@ -308,15 +309,15 @@ ${orderDetails}
 💰 TOTAL : ${total}
 `;
 
-    // Open Telegram with message
-    const telegramUsername = "VIPER2005"; // without @
+            // Open Telegram with message
+            const telegramUsername = "VIPER2005"; // without @
 
-    const telegramUrl =
-        `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
+            const telegramUrl =
+                `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
 
-    window.open(telegramUrl, "_blank");
-});
-</script>
+            window.open(telegramUrl, "_blank");
+        });
+    </script>
 
     <!-- bootsrap -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -329,5 +330,6 @@ ${orderDetails}
 
     <script src="javaScript/jquery.min.js"></script>
     <script src="javaScript/detail.js"></script>
-  </body>
+</body>
+
 </html>
