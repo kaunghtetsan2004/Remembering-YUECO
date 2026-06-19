@@ -140,7 +140,7 @@
             <tbody class="table-group-divider" id="shopTbody"></tbody>
             <tfoot>
                 <tr>
-                    <td colspan="6"><b>Total</b></td>
+                    <td colspan="6"><b>Total (10% off)</b></td>
                     <td id="total">0</td>
                 </tr>
             </tfoot>
@@ -152,7 +152,7 @@
     <section class="container py-5">
         <div class="form-box login form payment-form">
             <form id="form" method="POST" enctype="multipart/form-data">
-                <h3 class="text-center fw-bold mb-4">Payment</h3>
+                <h3 class="text-center slogan fw-bold mb-4">Order Form</h3>
 
                 <div class="input-box mb-3">
                     <input type="text" id="name" placeholder="Name" required>
@@ -200,6 +200,12 @@
                     <button type="submit" class="btn subMit w-50">
                         Submit
                     </button>
+                </div>
+                <div class="my-4 text-danger">
+                    <p>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Should it be confirmed, we will send it back through Telegram.
+                    </p>
                 </div>
             </form>
         </div>
@@ -310,7 +316,7 @@ ${orderDetails}
 `;
 
             // Open Telegram with message
-            const telegramUsername = "VIPER2005"; // without @
+            const telegramUsername = "rememberingyueco26"; // without @
 
             const telegramUrl =
                 `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;

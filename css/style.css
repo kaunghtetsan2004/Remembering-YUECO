@@ -103,6 +103,16 @@
     height: 3px;
 }
 
+.sold_out{
+    color: #fff !important;
+    background-color: #f15a29 !important;
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
 .card p{
     font-size: 13px;
 }

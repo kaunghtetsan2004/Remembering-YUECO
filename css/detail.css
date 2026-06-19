@@ -26,6 +26,8 @@
     color:#dc3545;
 }
 
+
+
 /* add to cart button */
 .btn-color{
     color: #ffffff !important;
@@ -33,7 +35,7 @@
 }
 
 .btn-color:hover{
-     background-color: #f8f9fa !important;   /* light gray background */
+    background-color: #f8f9fa !important;   /* light gray background */
     color: #f15a29 !important;              /* dark text */
     border: 1px solid #f15a29 !important;   /* dark border */
     cursor: pointer;
@@ -56,15 +58,7 @@
     width: 49%;
 }
 
-.subMit{
-    color: #fff;
-    background-color: #f15a29;
-}
 
-.subMit:hover{
-    color: #f15a29;
-    background-color: #000;
-}
 
 .payment-form{
     max-width: 500px;
@@ -162,13 +156,16 @@
 /* Submit Button */
 .subMit{
     
-    color: #f15a29 !important;
-    background-color: #fff !important;
+    color: #ffffff !important;
+    background-color: #f15a29 !important;
 }
 
 .subMit:hover{
-    color: #ffffff  !important;
-    background-color: #f15a29 !important;
+    background-color: #f8f9fa !important;   /* light gray background */
+    color: #f15a29 !important;              /* dark text */
+    border: 1px solid #f15a29 !important;   /* dark border */
+    cursor: pointer;
+    width: 100%;
 }
 
 .confirm{

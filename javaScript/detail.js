@@ -33,7 +33,7 @@ $(document).ready(function () {
                 data += `<tr>
                     <td>${j++}</td>
                     <td>${v.name}</td>
-                    <td>${v.price} MMK</td>
+                    <td>${v.price} MMK </td>
                     <td>${v.color}</td>
                     <td>${v.size}</td>
                     <td>
