@@ -16,6 +16,11 @@
     background:#fff;
 }
 
+/* Jacket */
+.color-red{
+    background: red;
+}
+
 .size-btn{
     min-width:60px;
 }
@@ -201,5 +206,11 @@
 }
 
 .table{
+    margin-top: 150px;
+}
+
+/* about.html */
+
+.about{
     margin-top: 150px;
 }
