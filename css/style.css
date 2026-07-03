@@ -149,3 +149,45 @@
 .copyright p{
     color: rgba(0, 0, 0, 0.4);
 }
+
+/* slider */
+.logo-slider{
+    width:100%;
+    overflow:hidden;
+    padding:20px 0;
+}
+
+.logo-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 10s linear infinite;
+}
+
+.logo{
+    flex:0 0 auto;
+    width:30vw;          /* 5 logos across */
+    min-width:90px;
+    max-width:220px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo img{
+    width:80%;
+    height:auto;
+    object-fit:contain;
+}
+
+.logo-track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
