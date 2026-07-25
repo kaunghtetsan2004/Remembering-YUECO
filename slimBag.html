@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body data-product="slimBag">
 
   <nav class="navbar navbar-expand-lg bg-black  fixed-top" id="mainNav">
     <div class="container d-flex align-items-center">
@@ -164,7 +164,8 @@
 
       <!-- Product Details -->
       <div class="col-lg-6">
-
+        
+        <!-- name -->
         <h2 class="mb-3" id="name">Slim Bag</h2>
 
         <p class="text-muted">
@@ -172,6 +173,7 @@
           Perfect for everyday wear.
         </p>
 
+        <!-- price -->
         <div class="product-price slogan mb-4" id="price">
           25000 MMK
         </div>
@@ -189,28 +191,9 @@
             </div>
 
           </div>
+          <h4 id="stockMessage" class="mt-2 text-danger fw-bold"></h4>
+
         </div>
-
-        <!-- Size Choice -->
-        <!-- <div class="mb-4">
-          <h5>Size</h5>
-
-          <div class="btn-group" role="group">
-
-            <input type="radio" class="btn-check" name="size" id="s" checked>
-            <label class="btn btn-outline-dark size-btn" for="s">S</label>
-
-            <input type="radio" class="btn-check" name="size" id="m">
-            <label class="btn btn-outline-dark size-btn" for="m">M</label>
-
-            <input type="radio" class="btn-check" name="size" id="l">
-            <label class="btn btn-outline-dark size-btn" for="l">L</label>
-
-            <input type="radio" class="btn-check" name="size" id="xl">
-            <label class="btn btn-outline-dark size-btn" for="xl">XL</label>
-
-          </div>
-        </div> -->
 
         <!-- Quantity -->
         <div class="mb-4">
@@ -226,10 +209,10 @@
             Add To Cart
           </button>
 
-          <a class="btn btn-outline-dark btn-lg byNow" href="order.html" type="submit" data-id="5" data-name="Slim Bag"
+          <button class="btn btn-outline-dark btn-lg byNow" on-click="location.href='order.html'" type="submit" data-id="5" data-name="Slim Bag"
             data-pricce="25000">
             Get Pre-order
-          </a>
+          </button>
 
         </div>
 

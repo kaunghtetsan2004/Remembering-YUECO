@@ -1,6 +1,74 @@
 
 $(document).ready(function () {
 
+    const product = document.body.dataset.product;
+
+    const stockData = {
+
+        jacket: {
+            black: {            
+                M: "out",
+                L: "in",              
+            },
+            khaki: {             
+                M: "in",
+                L: "out",             
+            }
+        },
+
+        tshirt: {
+            black: {
+                S: "in",
+                M: "in",
+                L: "out",
+                XL: "in"
+            },
+            white: {
+                S: "out",
+                M: "in",
+                L: "in",
+                XL: "in"
+            }
+        },
+        t2shirt: {
+            black: {
+                S: "in",
+                M: "in",
+                L: "out",
+                XL: "in"
+            },
+            white: {
+                S: "out",
+                M: "in",
+                L: "in",
+                XL: "in"
+            }
+        },
+        
+
+        longSleeve: {
+            black: {
+                S: "in",
+                M: "in",
+                L: "out",
+                XL: "in"
+            },
+            white: {
+                S: "out",
+                M: "in",
+                L: "in",
+                XL: "in"
+            }
+        },
+
+        slimBag: {
+            black: "in",
+            white: "out"
+        }
+
+
+    };
+
     count();
     getData();
 
@@ -197,7 +265,55 @@ $(document).ready(function () {
     $('.color-btn').click(function () {
         $('.color-btn').removeClass('active');
         $(this).addClass('active');
+
+        updateStock();
     });
 
     $('.color-black').addClass('active');
+
+    // =============================
+// Size Stock
+// =============================
+
+updateStock();
+
+$('.size-option').change(function () {
+    updateStock();
+});
+
+function updateStock() {
+
+    let color = $('.color-btn.active').attr('title').toLowerCase();
+
+    let stock;
+
+    // Product has size
+    if ($('input[name="size"]').length > 0) {
+
+        let size = $('input[name="size"]:checked').next('label').text();
+
+        stock = stockData[product][color][size];
+
+    }
+    // Product has only color
+    else {
+
+        stock = stockData[product][color];
+
+    }
+
+    if (stock == "out") {
+
+        $('#stockMessage').text('Out of Stock');
+        $('.addToCart').prop('disabled', true);
+        $('.byNow').prop('disabled', true);
+
+    } else {
+
+        $('#stockMessage').text('');
+        $('.addToCart').prop('disabled', false);
+        $('.byNow').prop('disabled', false);
+
+    }
+}
 });
