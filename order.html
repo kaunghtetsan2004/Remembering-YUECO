@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
     <!-- icon -->
     <title>YUECO</title>
@@ -140,8 +139,16 @@
             <tbody class="table-group-divider" id="shopTbody"></tbody>
             <tfoot>
                 <tr>
-                    <td colspan="6"><b>Total (10% off)</b></td>
-                    <td id="total">0</td>
+                    <td colspan="6"><b>Subtotal</b></td>
+                    <td id="subtotal">0 MMK</td>
+                </tr>
+                <tr>
+                    <td colspan="6"><b>Discount (5%)</b></td>
+                    <td id="discount">0 MMK</td>
+                </tr>
+                <tr>
+                    <td colspan="6"><b>Total</b></td>
+                    <td id="total">0 MMK</td>
                 </tr>
             </tfoot>
         </table>
@@ -279,9 +286,10 @@
             const phone = document.getElementById("phone").value;
             const rollno = document.getElementById("rollno").value;
             const major = document.getElementById("major").value;
+            const discount = document.getElementById("discount").innerText;
             const total = document.getElementById("total").innerText;
 
-            // Get table data
+            // Get table databb
             let orderDetails = "";
             const rows = document.querySelectorAll("#shopTbody tr");
 
@@ -312,6 +320,7 @@ ${index + 1}. ${cols[1]?.innerText || ""}
 ━━━━━━━━━━━━━━
 ${orderDetails}
 
+🎁 Discount (10%) : ${discount}
 💰 TOTAL : ${total}
 `;
 
