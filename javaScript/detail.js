@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         jacket: {
             black: {            
-                M: "out",
+                M: "in",
                 L: "in",              
             },
             khaki: {             
