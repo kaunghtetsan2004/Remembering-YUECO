@@ -65,7 +65,7 @@
 
       <!-- Center Logo -->
       <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
-        <img src="assets/PNGs-19.png" alt="Logo" class="logo" height="60">
+        <img src="assets/Logo.png" alt="Logo" class="logo" height="60">
       </a>
 
       <!-- Right Cart -->
@@ -139,11 +139,11 @@
 
             <!-- Black Product Images -->
             <div class="carousel-item active">
-              <img src="assets/PNGs-01.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/Tee 1 Black Font.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
             <div class="carousel-item">
-              <img src="assets/PNGs-02.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/Tee 1 Black Back.png" class="d-block w-100" alt="White T-Shirt">
             </div>
 
 
@@ -168,10 +168,10 @@
         <!-- name -->
         <h2 class="mb-3" id="name"> Tee 1</h2>
 
-        <p class="text-muted">
+        <!-- <p class="text-muted">
           Comfortable premium cotton t-shirt with modern fit.
           Perfect for everyday wear.
-        </p>
+        </p> -->
 
         <!-- price -->
         <div class="product-price mb-4 slogan" id="price">
@@ -199,20 +199,32 @@
 
           <div class="btn-group" role="group">
 
-            <input type="radio" class="btn-check size-option" name="size" id="s"  checked>
+            <input type="radio" class="btn-check size-option" name="size" id="s" checked>
             <label class="btn btn-outline-dark size-btn" for="s">S</label>
 
-            <input type="radio" class="btn-check size-option" name="size" id="m" >
+            <input type="radio" class="btn-check size-option" name="size" id="m">
             <label class="btn btn-outline-dark size-btn" for="m">M</label>
 
-            <input type="radio" class="btn-check size-option" name="size" id="l" >
+            <input type="radio" class="btn-check size-option" name="size" id="l">
             <label class="btn btn-outline-dark size-btn" for="l">L</label>
 
-            <input type="radio" class="btn-check size-option" name="size" id="xl" >
-            <label class="btn btn-outline-dark size-btn" for="xl">XL</label>
+            <!-- <input type="radio" class="btn-check size-option" name="size" id="xl">
+            <label class="btn btn-outline-dark size-btn" for="xl">XL</label> -->
 
           </div>
           <h4 id="stockMessage" class="mt-2 text-danger fw-bold"></h4>
+        </div>
+
+        <!-- size details -->
+        <div class="size-guide">
+          <button class="guide-btn">
+            <span>SIZE GUIDE</span>
+            <span id="icon">+</span>
+          </button>
+
+          <div class="size-content">
+            <img src="assets/Measurment-01.jpg" alt="Size Guide">
+          </div>
         </div>
 
         <!-- Quantity -->
@@ -225,12 +237,12 @@
         <!-- Buttons -->
         <div class="d-grid gap-2">
 
-          <button class="btn btn-color btn-lg addToCart" data-id="1" data-name="Tee 1" data-pricce="40500">
+          <button class="btn btn-color btn-lg addToCart" data-id="1" data-name="Tee 1" data-pricce="38000">
             Add To Cart
           </button>
 
           <button class="btn btn-outline-dark btn-lg byNow" onclick="window.location.href='order.html'" type="submit"
-            data-id="1" data-name="Tee 1" data-pricce="40500">
+            data-id="1" data-name="Tee 1" data-pricce="38000">
             Get Pre-order
           </button>
 
@@ -288,6 +300,22 @@
   </footer>
 
   <script>
+    const btn = document.querySelector(".guide-btn");
+    const content = document.querySelector(".size-content");
+    const icon = document.getElementById("icon");
+
+    btn.onclick = function () {
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.innerHTML = "+";
+      } else {
+        content.style.display = "block";
+        icon.innerHTML = "−";
+      }
+    };
+  </script>
+
+  <script>
     function changeColor(color) {
 
       const carouselImages = document.getElementById("carouselImages");
@@ -296,11 +324,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/PNGs-01.png" class="d-block w-100">
+            <img src="assets/Tee 1 Black Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/PNGs-02.png" class="d-block w-100">
+            <img src="assets/Tee 1 Black Back.png" class="d-block w-100">
         </div>
        
         `;
@@ -310,11 +338,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/PNGs-03.png" class="d-block w-100">
+            <img src="assets/Tee 1 White Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/PNGs-04.png" class="d-block w-100">
+            <img src="assets/Tee 1 White Back.png" class="d-block w-100">
         </div>
      
         `;
@@ -337,6 +365,8 @@
 
     document.getElementById('year').innerHTML = new Date().getFullYear();
   </script>
+
+
 
   <!-- bootsrap -->
   <script src="bootstrap/js/bootstrap.min.js"></script>

@@ -29,7 +29,7 @@
 
 </head>
 
-<body data-product="t2shirt">
+<body data-product="slimBag">
 
   <nav class="navbar navbar-expand-lg bg-black  fixed-top" id="mainNav">
     <div class="container d-flex align-items-center">
@@ -65,7 +65,7 @@
 
       <!-- Center Logo -->
       <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
-        <img src="assets/Logo.png" alt="Logo" class="logo" height="60">
+        <img src="assets/PNGs-19.png" alt="Logo" class="logo" height="60">
       </a>
 
       <!-- Right Cart -->
@@ -139,12 +139,12 @@
 
             <!-- Black Product Images -->
             <div class="carousel-item active">
-              <img src="assets/Tee 2 Black Font.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/Lanyard Black.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
-            <div class="carousel-item">
-              <img src="assets/Tee 2 Black Back.png" class="d-block w-100" alt="Black T-Shirt">
-            </div>
+            <!-- <div class="carousel-item">
+              <img src="assets/ToeBag Black Back.png" class="d-block w-100" alt="Black T-Shirt">
+            </div> -->
 
 
 
@@ -164,9 +164,9 @@
 
       <!-- Product Details -->
       <div class="col-lg-6">
-
-        <!-- Name -->
-        <h2 class="mb-3" id="name"> Tee 2</h2>
+        
+        <!-- name -->
+        <h2 class="mb-3" id="name">Lanyard</h2>
 
         <!-- <p class="text-muted">
           Comfortable premium cotton t-shirt with modern fit.
@@ -174,8 +174,8 @@
         </p> -->
 
         <!-- price -->
-        <div class="product-price mb-4 slogan" id="price">
-          38000 MMK 
+        <div class="product-price slogan mb-4" id="price">
+          10000 MMK
         </div>
 
         <!-- Color Choice -->
@@ -191,40 +191,8 @@
             </div>
 
           </div>
-        </div>
-
-        <!-- Size Choice -->
-        <div class="mb-4">
-          <h5>Size</h5>
-
-          <div class="btn-group" role="group">
-
-            <input type="radio" class="btn-check size-option" name="size" id="s"  checked>
-            <label class="btn btn-outline-dark size-btn" for="s">S</label>
-
-            <input type="radio" class="btn-check size-option" name="size" id="m" >
-            <label class="btn btn-outline-dark size-btn" for="m">M</label>
-
-            <input type="radio" class="btn-check size-option" name="size" id="l" >
-            <label class="btn btn-outline-dark size-btn" for="l">L</label>
-
-            <!-- <input type="radio" class="btn-check size-option" name="size" id="xl" >
-            <label class="btn btn-outline-dark size-btn" for="xl">XL</label> -->
-
-          </div>
           <h4 id="stockMessage" class="mt-2 text-danger fw-bold"></h4>
-        </div>
 
-        <!-- size details -->
-        <div class="size-guide">
-          <button class="guide-btn">
-            <span>SIZE GUIDE</span>
-            <span id="icon">+</span>
-          </button>
-
-          <div class="size-content">
-            <img src="assets/Measurment-01.jpg" alt="Size Guide">
-          </div>
         </div>
 
         <!-- Quantity -->
@@ -237,14 +205,14 @@
         <!-- Buttons -->
         <div class="d-grid gap-2">
 
-          <button class="btn btn-color btn-lg addToCart" data-id="2" data-name="Tee 2" data-pricce="38000">
+          <button class="btn btn-color btn-lg addToCart" data-id="5" data-name="Lanyard" data-pricce="10000">
             Add To Cart
           </button>
 
-          <a class="btn btn-outline-dark btn-lg byNow" href="order.html" type="submit" data-id="2" data-name="Tee 2"
-            data-pricce="38000">
+          <button class="btn btn-outline-dark btn-lg byNow" onclick="window.location.href='order.html'" type="submit" data-id="5" data-name="Lanyard"
+            data-pricce="10000">
             Get Pre-order
-          </a>
+          </button>
 
         </div>
 
@@ -300,22 +268,6 @@
   </footer>
 
   <script>
-    const btn = document.querySelector(".guide-btn");
-    const content = document.querySelector(".size-content");
-    const icon = document.getElementById("icon");
-
-    btn.onclick = function () {
-      if (content.style.display === "block") {
-        content.style.display = "none";
-        icon.innerHTML = "+";
-      } else {
-        content.style.display = "block";
-        icon.innerHTML = "−";
-      }
-    };
-  </script>
-
-  <script>
     function changeColor(color) {
 
       const carouselImages = document.getElementById("carouselImages");
@@ -324,11 +276,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/Tee 2 Black Font.png" class="d-block w-100">
+            <img src="assets/Lanyard Black.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/Tee 2 Black Back.png" class="d-block w-100">
+            <img src="assets/ToeBag Black Back.png" class="d-block w-100">
         </div>
        
         `;
@@ -338,11 +290,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/Tee 2 White Font.png" class="d-block w-100">
-        </div>
+              <img src="assets/Lanyard White.png" class="d-block w-100">
+          </div>
 
         <div class="carousel-item">
-            <img src="assets/Tee 2 White Back.png" class="d-block w-100">
+            <img src="assets/ToeBag Khaki Back.png" class="d-block w-100">
         </div>
      
         `;

@@ -139,11 +139,11 @@
 
             <!-- Black Product Images -->
             <div class="carousel-item active">
-              <img src="assets/PNGs-01.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/LS Black Font.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
             <div class="carousel-item">
-              <img src="assets/PNGs-02.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/LS Black Back.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
 
@@ -167,13 +167,13 @@
 
         <h2 class="mb-3" id="name">Long Sleeve</h2>
 
-        <p class="text-muted">
+        <!-- <p class="text-muted">
           Comfortable premium cotton t-shirt with modern fit.
           Perfect for everyday wear.
-        </p>
+        </p> -->
 
         <div class="product-price slogan mb-4" id="price">
-          55000 MMK
+          42000 MMK
         </div>
 
         <!-- Color Choice -->
@@ -197,8 +197,8 @@
 
           <div class="btn-group" role="group">
 
-             <input type="radio" class="btn-check size-option" name="size" id="s"  checked>
-            <label class="btn btn-outline-dark size-btn" for="s">S</label>
+             <!-- <input type="radio" class="btn-check size-option" name="size" id="s"  checked>
+            <label class="btn btn-outline-dark size-btn" for="s">S</label> -->
 
             <input type="radio" class="btn-check size-option" name="size" id="m" >
             <label class="btn btn-outline-dark size-btn" for="m">M</label>
@@ -206,12 +206,24 @@
             <input type="radio" class="btn-check size-option" name="size" id="l" >
             <label class="btn btn-outline-dark size-btn" for="l">L</label>
 
-            <input type="radio" class="btn-check size-option" name="size" id="xl" >
-            <label class="btn btn-outline-dark size-btn" for="xl">XL</label>
+            <!-- <input type="radio" class="btn-check size-option" name="size" id="xl" >
+            <label class="btn btn-outline-dark size-btn" for="xl">XL</label> -->
 
           </div>
           <h4 id="stockMessage" class="mt-2 text-danger fw-bold"></h4>
 
+        </div>
+
+        <!-- size details -->
+        <div class="size-guide">
+          <button class="guide-btn">
+            <span>SIZE GUIDE</span>
+            <span id="icon">+</span>
+          </button>
+
+          <div class="size-content">
+            <img src="assets/Measurment-03.jpg" alt="Size Guide">
+          </div>
         </div>
 
         <!-- Quantity -->
@@ -224,12 +236,12 @@
         <!-- Buttons -->
         <div class="d-grid gap-2">
 
-          <button class="btn btn-color btn-lg addToCart" data-id="3" data-name="LongSleeve" data-pricce="55000">
+          <button class="btn btn-color btn-lg addToCart" data-id="3" data-name="L/S" data-pricce="42000">
             Add To Cart
           </button>
 
           <button class="btn btn-outline-dark btn-lg byNow" onclick="window.location.href='order.html'" type="submit" data-id="3"
-            data-name="LongSleeve" data-pricce="55000">
+            data-name="L/S" data-pricce="42000">
             Get Pre-order
           </button>
 
@@ -287,6 +299,22 @@
   </footer>
 
   <script>
+    const btn = document.querySelector(".guide-btn");
+    const content = document.querySelector(".size-content");
+    const icon = document.getElementById("icon");
+
+    btn.onclick = function () {
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.innerHTML = "+";
+      } else {
+        content.style.display = "block";
+        icon.innerHTML = "−";
+      }
+    };
+  </script>
+
+  <script>
     function changeColor(color) {
 
       const carouselImages = document.getElementById("carouselImages");
@@ -295,11 +323,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/PNGs-01.png" class="d-block w-100">
+            <img src="assets/LS Black Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/PNGs-02.png" class="d-block w-100">
+            <img src="assets/LS Black Back.png" class="d-block w-100">
         </div>
        
         `;
@@ -309,11 +337,11 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/PNGs-03.png" class="d-block w-100">
+            <img src="assets/LS White Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/PNGs-04.png" class="d-block w-100">
+            <img src="assets/LS White Back.png" class="d-block w-100">
         </div>
      
         `;

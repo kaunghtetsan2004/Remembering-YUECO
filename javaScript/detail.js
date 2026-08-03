@@ -12,7 +12,7 @@ $(document).ready(function () {
             },
             khaki: {             
                 M: "in",
-                L: "out",             
+                L: "im",             
             }
         },
 
@@ -20,11 +20,11 @@ $(document).ready(function () {
             black: {
                 S: "in",
                 M: "in",
-                L: "out",
+                L: "in",
                 XL: "in"
             },
             white: {
-                S: "out",
+                S: "in",
                 M: "in",
                 L: "in",
                 XL: "in"
@@ -34,11 +34,11 @@ $(document).ready(function () {
             black: {
                 S: "in",
                 M: "in",
-                L: "out",
+                L: "in",
                 XL: "in"
             },
             white: {
-                S: "out",
+                S: "in",
                 M: "in",
                 L: "in",
                 XL: "in"
@@ -50,11 +50,11 @@ $(document).ready(function () {
             black: {
                 S: "in",
                 M: "in",
-                L: "out",
+                L: "in",
                 XL: "in"
             },
             white: {
-                S: "out",
+                S: "in",
                 M: "in",
                 L: "in",
                 XL: "in"
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
         slimBag: {
             black: "in",
-            white: "out"
+            white: "in"
         }
 
 

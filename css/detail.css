@@ -214,3 +214,49 @@
 .about{
     margin-top: 150px;
 }
+
+/* size guide */
+.size-guide{
+    width:100%;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+.guide-btn{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:1px solid #ddd;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.size-content{
+    display:none;
+    margin-top:10px;
+}
+
+.size-content img{
+    width:100%;
+}
+
+.icon{
+    font-size:24px;
+}
+
+/* .size-content{
+    display:none;
+    padding:15px 0;
+}
+
+.size-content img{
+    width:100%;
+    height:auto;
+    display:block;
+} */
+
+.size-content.active{
+    display:block;
+}

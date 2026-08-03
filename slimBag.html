@@ -139,11 +139,11 @@
 
             <!-- Black Product Images -->
             <div class="carousel-item active">
-              <img src="assets/slimBagBlackFront.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/ToeBag Black Font.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
             <div class="carousel-item">
-              <img src="assets/slimBagBlackBack.png" class="d-block w-100" alt="Black T-Shirt">
+              <img src="assets/ToeBag Black Back.png" class="d-block w-100" alt="Black T-Shirt">
             </div>
 
 
@@ -166,16 +166,16 @@
       <div class="col-lg-6">
         
         <!-- name -->
-        <h2 class="mb-3" id="name">Slim Bag</h2>
+        <h2 class="mb-3" id="name">Toe Bag</h2>
 
-        <p class="text-muted">
+        <!-- <p class="text-muted">
           Comfortable premium cotton t-shirt with modern fit.
           Perfect for everyday wear.
-        </p>
+        </p> -->
 
         <!-- price -->
         <div class="product-price slogan mb-4" id="price">
-          25000 MMK
+          15000 MMK
         </div>
 
         <!-- Color Choice -->
@@ -187,7 +187,7 @@
             <div class="color-btn color-black" onclick="changeColor('black')" title="Black">
             </div>
 
-            <div class="color-btn color-white" onclick="changeColor('white')" title="White">
+            <div class="color-btn color-khaki" onclick="changeColor('khaki')" title="Khaki">
             </div>
 
           </div>
@@ -205,12 +205,12 @@
         <!-- Buttons -->
         <div class="d-grid gap-2">
 
-          <button class="btn btn-color btn-lg addToCart" data-id="5" data-name="Slim Bag" data-pricce="25000">
+          <button class="btn btn-color btn-lg addToCart" data-id="5" data-name="Toe Bag" data-pricce="15000">
             Add To Cart
           </button>
 
-          <button class="btn btn-outline-dark btn-lg byNow" on-click="location.href='order.html'" type="submit" data-id="5" data-name="Slim Bag"
-            data-pricce="25000">
+          <button class="btn btn-outline-dark btn-lg byNow" onclick="location.href='order.html'"  type="submit" data-id="5" data-name="Toe Bag"
+            data-pricce="15000">
             Get Pre-order
           </button>
 
@@ -276,25 +276,25 @@
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/slimBagBlackFront.png" class="d-block w-100">
+            <img src="assets/ToeBag Black Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/slimBagBlackBack.png" class="d-block w-100">
+            <img src="assets/ToeBag Black Back.png" class="d-block w-100">
         </div>
        
         `;
       }
 
-      if (color === "white") {
+      if (color === "khaki") {
 
         carouselImages.innerHTML = `
         <div class="carousel-item active">
-            <img src="assets/slimBagWhiteFront.png" class="d-block w-100">
+            <img src="assets/ToeBag Khaki Font.png" class="d-block w-100">
         </div>
 
         <div class="carousel-item">
-            <img src="assets/slimBagWhiteBack.png" class="d-block w-100">
+            <img src="assets/ToeBag Khaki Back.png" class="d-block w-100">
         </div>
      
         `;
