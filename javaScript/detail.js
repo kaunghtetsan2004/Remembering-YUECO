@@ -115,7 +115,7 @@ $(document).ready(function () {
 
             $('#shopTbody').html(data);
             $('#total').text(total + ' MMK');
-            let discount = total * 5 / 100;
+            let discount = total * 10 / 100;
             let finalTotal = total - discount;
 
             $('#subtotal').text(total + ' MMK');

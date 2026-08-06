@@ -143,7 +143,7 @@
                     <td id="subtotal">0 MMK</td>
                 </tr>
                 <tr>
-                    <td colspan="6"><b>Discount (5%)</b></td>
+                    <td colspan="6"><b>Discount (10%)</b></td>
                     <td id="discount">0 MMK</td>
                 </tr>
                 <tr>
@@ -177,18 +177,32 @@
                     <input type="text" id="major" placeholder="Major" required>
                 </div>
 
+                <!-- choice campus -->
+                <div class="payment-method mb-4">
+                    <label class="method-card">
+                        <input type="radio" name="campus" value="Kamayut" checked>
+                        <span> Kamayut</span>
+                    </label>
+
+                    <label class="method-card">
+                        <input type="radio" name="campus" value="YTG">
+                        <span> YTG</span>
+                    </label>
+                </div>
+
+
                 <!-- Payment Choice -->
                 <!-- <div class="payment-method mb-4">
-          <label class="method-card">
-            <input type="radio" name="payment" value="kpay" checked>
-            <span> <img src="assets/kpay.png" class="w-25" alt=""> KPay</span>
-          </label>
+                    <label class="method-card">
+                        <input type="radio" name="payment" value="kpay" checked>
+                        <span> <img src="assets/kpay.png" class="w-25" alt=""> KPay</span>
+                    </label>
 
-          <label class="method-card">
-            <input type="radio" name="payment" value="wavepay">
-            <span> <img src="assets/wavemoney.jpg" class="w-25" alt=""> Wave Pay</span>
-          </label>
-        </div> -->
+                    <label class="method-card">
+                        <input type="radio" name="payment" value="wavepay">
+                        <span> <img src="assets/wavemoney.jpg" class="w-25" alt=""> Wave Pay</span>
+                    </label>
+                </div> -->
 
 
                 <!-- <div class="text-center mb-4">
@@ -286,6 +300,8 @@
             const phone = document.getElementById("phone").value;
             const rollno = document.getElementById("rollno").value;
             const major = document.getElementById("major").value;
+            const campusElement = document.querySelector('input[name="campus"]:checked');
+            const campus = campusElement ? campusElement.value : "";
             const discount = document.getElementById("discount").innerText;
             const total = document.getElementById("total").innerText;
 
@@ -314,6 +330,7 @@ ${index + 1}. ${cols[1]?.innerText || ""}
 📞 Phone : ${phone}
 🎓 Roll No : ${rollno}
 📚 Major : ${major}
+🏫 Campus : ${campus}
 
 ━━━━━━━━━━━━━━
 📦 ORDER ITEMS
