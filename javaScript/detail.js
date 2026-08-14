@@ -26,7 +26,7 @@ $(document).ready(function () {
             white: {
                 S: "in",
                 M: "in",
-                L: "in",
+                L: "out",
                 XL: "in"
             }
         },
@@ -49,11 +49,11 @@ $(document).ready(function () {
         longSleeve: {
             black: {
                 M: "in",
-                L: "in",
+                L: "out",
             },
             white: {
                 M: "in",
-                L: "in",
+                L: "out",
             }
         },
 
