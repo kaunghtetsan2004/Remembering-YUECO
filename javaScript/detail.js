@@ -8,7 +8,7 @@ $(document).ready(function () {
         jacket: {
             black: {            
                 M: "in",
-                L: "in",              
+                L: "out",              
             },
             khaki: {             
                 M: "in",
@@ -39,7 +39,7 @@ $(document).ready(function () {
             },
             white: {
                 S: "in",
-                M: "in",
+                M: "out",
                 L: "in",
                 XL: "in"
             }
