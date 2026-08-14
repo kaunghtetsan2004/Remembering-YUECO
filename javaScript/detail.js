@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         tshirt: {
             black: {
-                S: "in",
+                S: "out",
                 M: "in",
                 L: "in",
                 XL: "in"
