@@ -24,7 +24,7 @@ $(document).ready(function () {
                 XL: "in"
             },
             white: {
-                S: "in",
+                S: "out",
                 M: "in",
                 L: "out",
                 XL: "in"
