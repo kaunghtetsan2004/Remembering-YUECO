@@ -11,7 +11,7 @@ $(document).ready(function () {
                 L: "out",              
             },
             khaki: {             
-                M: "in",
+                M: "out",
                 L: "in",             
             }
         },
