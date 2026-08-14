@@ -12,7 +12,7 @@ $(document).ready(function () {
             },
             khaki: {             
                 M: "in",
-                L: "im",             
+                L: "in",             
             }
         },
 
@@ -48,10 +48,8 @@ $(document).ready(function () {
 
         longSleeve: {
             black: {
-                S: "in",
                 M: "in",
                 L: "in",
-                XL: "in"
             },
             white: {
                 S: "in",
@@ -63,7 +61,7 @@ $(document).ready(function () {
 
         slimBag: {
             black: "in",
-            white: "in"
+            khaki: "in"
         }
 
 
