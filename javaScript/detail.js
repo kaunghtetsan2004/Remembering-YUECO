@@ -49,11 +49,11 @@ $(document).ready(function () {
         longSleeve: {
             black: {
                 M: "in",
-                L: "out",
+                L: "in",
             },
             white: {
                 M: "in",
-                L: "out",
+                L: "in",
             }
         },
 
