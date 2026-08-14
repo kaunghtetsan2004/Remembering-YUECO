@@ -12,7 +12,7 @@ $(document).ready(function () {
             },
             khaki: {             
                 M: "out",
-                L: "in",             
+                L: "out",             
             }
         },
 
