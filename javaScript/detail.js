@@ -58,7 +58,7 @@ $(document).ready(function () {
         },
 
         slimBag: {
-            black: "in",
+            black: "out",
             khaki: "in"
         }
 
