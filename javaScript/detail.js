@@ -33,7 +33,7 @@ $(document).ready(function () {
         t2shirt: {
             black: {
                 S: "in",
-                M: "in",
+                M: "out",
                 L: "out",
                 XL: "in"
             },
