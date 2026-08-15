@@ -34,7 +34,7 @@ $(document).ready(function () {
             black: {
                 S: "in",
                 M: "in",
-                L: "in",
+                L: "out",
                 XL: "in"
             },
             white: {
