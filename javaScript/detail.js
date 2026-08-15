@@ -40,7 +40,7 @@ $(document).ready(function () {
             white: {
                 S: "in",
                 M: "out",
-                L: "in",
+                L: "out",
                 XL: "in"
             }
         },
